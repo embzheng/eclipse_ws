@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:orientation="vertical"  
+    tools:context="${relativePackage}.${activityClass}" >  
+    
+	<!-- URL -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="#FFFF00">
+
+    	<EditText
+	        android:id="@+id/edtUrl"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="8"	        
+        	android:lines="1"
+	        android:text="" />
+
+    	<Button
+    	    android:id="@+id/btnGo"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="2"
+    	    android:text="Go" />
+    	
+    	 
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="#6B8E23">    	
+    	<EditText
+	        android:id="@+id/edtDiff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:maxLines="3"
+	        android:singleLine="false"  
+        	android:scrollbars="vertical"  
+        	android:editable="false"
+	        android:text="diff" />   
+    </LinearLayout>
+   
+
+    <!-- 获取网站的标题-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:scrollbars="vertical"
+        android:singleLine="false"       
+        android:maxLines="15"
+        android:text="title" />
+
+    <!--开始加载提示-->
+
+    <TextView
+        android:id="@+id/text_beginLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="beginLoading" />
+
+    <!--获取加载进度-->
+
+    <TextView
+        android:id="@+id/text_Loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_beginLoading"
+        android:text="Loading" />
+
+    <!--结束加载提示-->
+
+    <TextView
+        android:id="@+id/text_endLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_Loading"
+        android:text="endLoading" />
+	    
+    <!--显示网页区域-->
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_endLoading"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
