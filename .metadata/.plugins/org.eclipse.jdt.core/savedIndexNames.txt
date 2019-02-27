@@ -1,7 +1,1 @@
-INDEX VERSION 1.130+F:\android\project\eclipse_ws\.metadata\.plugins\org.eclipse.jdt.core
-3489817826.index
-3225093945.index
-2625595558.index
-577006943.index
-3938906120.index
-1583321754.index
+INDEX VERSION 1.130+F:\project\mygit\eclipse_ws\.metadata\.plugins\org.eclipse.jdt.core
